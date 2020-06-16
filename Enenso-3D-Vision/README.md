@@ -1,2 +1,3 @@
-A C++ program that uses OpenCV and the Ensenso API for 3D object recognition. Acquires a colored 3D image of a wounded body from an Ensenso 3D camera and processes the RGB data of that image to extract the 3D contour of the wound, which is to be used for tracing the path of an ink-jet nozzle that will fill the wound with healing fluids.
+# 3D Wound Contour Extractor
 
+A C++ program that uses an Ensenso 3D camera to obtain a colored point cloud of a wound in a body. It maps the XYZ coordinates of the points in the point cloud to their corresponding RGBA values to extract XYZ coordinates of the contour of the wound. These XYZ coordinates are then fed into a Robot Operating System (ROS) node to trace the path of an ink-jet nozzle that will move along the wound contour to fill the wound with healing fluids.
